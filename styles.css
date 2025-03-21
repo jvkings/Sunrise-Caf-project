@@ -15,10 +15,14 @@ h1 {
     color: #d35400;
     font-size: 2.5em;
 }
+
 p {
-    margin-left: 60px;
-    margin-right: 60px;
+    line-height: 1.6;
+    margin: 0 auto;
+    max-width: 800px;
+    padding: 0 20px; /* Adds padding on smaller screens */
 }
+
 h2 {
     text-align: center;
     color: #e67e22;
@@ -26,18 +30,12 @@ h2 {
     margin-bottom: 15px;
 }
 
-p {
-    text-align: center;
-    line-height: 1.6;
-}
-
 /* Table Styles */
 table {
-    width: 85%;
+    width: 100%;
+    max-width: 800px;
     border-collapse: collapse;
-    margin-left: 100px;
-    margin-right: 85px;
-    margin-bottom: 30px;
+    margin: 0 auto 30px;
     background-color: #fff;
     border: 2px solid #e67e22;
 }
@@ -74,7 +72,54 @@ a:hover {
     background-color: #fff3e6;
     padding: 20px;
     border-radius: 8px;
-    margin-top: 20px;
-    margin-left: 60px;
-    margin-right: 60px;
+    margin: 20px auto; 
+    max-width: 800px; 
+}
+
+/* Responsive Design for Mobile Devices */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2em; /* Smaller font size for mobile */
+    }
+
+    h2 {
+        font-size: 1.5em; /* Smaller font size for mobile */
+    }
+
+    p {
+        padding: 0 10px; /* Less padding on smaller screens */
+    }
+
+    table {
+        width: 100%; /* Full width on mobile */
+        margin: 0 auto 20px; /* Centers the table */
+    }
+
+    th, td {
+        padding: 8px; /* Smaller padding for table cells */
+    }
+
+    #contact {
+        margin: 20px 10px; /* Less margin on smaller screens */
+        padding: 15px; /* Smaller padding for contact section */
+    }
+}
+
+/* Responsive Design for Very Small Screens (e.g., smartphones) */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.75em; /* Even smaller font size for very small screens */
+    }
+
+    h2 {
+        font-size: 1.25em; /* Even smaller font size for very small screens */
+    }
+
+    table {
+        font-size: 0.9em; /* Smaller font size for table content */
+    }
+
+    th, td {
+        padding: 6px; /* Even smaller padding for table cells */
+    }
 }
